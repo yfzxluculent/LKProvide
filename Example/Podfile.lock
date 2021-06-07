@@ -1,0 +1,16 @@
+PODS:
+  - LKProvide (0.1.0)
+
+DEPENDENCIES:
+  - LKProvide (from `../`)
+
+EXTERNAL SOURCES:
+  LKProvide:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LKProvide: 9753a9d0668b27c054009115559f94f3aa55efb1
+
+PODFILE CHECKSUM: c837620aa1b344c130af87f872317ed338d4bf29
+
+COCOAPODS: 1.9.3

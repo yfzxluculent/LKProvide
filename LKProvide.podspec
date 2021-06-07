@@ -30,13 +30,14 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LKProvide/Classes/**/*'
+  s.source_files = 'LKProvide/Classes/**/*{h,m}'
   
-  # s.resource_bundles = {
-  #   'LKProvide' => ['LKProvide/Assets/*.png']
-  # }
+s.resources    = "LKVendors/Classes/**/*.{png,bundle,txt,a}"
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.dependency 'BaiduMobStatCodeless', '~> 2.3'
+s.dependency 'BaiduMapKit', '~> 2.3'
+s.dependency 'BMKLocationKit', '~> 2.3'
+
 end
