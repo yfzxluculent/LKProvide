@@ -1,0 +1,6 @@
+use_frameworks!
+target 'LKProvide_Tests' do
+  pod 'LKProvide', :path => '../'
+  
+  
+end
