@@ -1,12 +1,6 @@
 PODS:
-  - BaiduMapKit (4.4.2)
-  - BaiduMobStatCodeless (5.0.8)
-  - BMKLocationKit (1.7.0)
   - DACircularProgress (2.3.1)
-  - LKProvide (0.1.5):
-    - BaiduMapKit (= 4.4.2)
-    - BaiduMobStatCodeless (= 5.0.8)
-    - BMKLocationKit (= 1.7.0)
+  - LKProvide (0.1.6):
     - DACircularProgress
     - Masonry
     - MBProgressHUD (= 1.1.0)
@@ -22,9 +16,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - BaiduMapKit
-    - BaiduMobStatCodeless
-    - BMKLocationKit
     - DACircularProgress
     - Masonry
     - MBProgressHUD
@@ -35,11 +26,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaiduMapKit: 11acde2e7c06e31b7de60b323880a5eb7c4dccb6
-  BaiduMobStatCodeless: a892f5eb0854731ddecf4e334f962f13846d20ee
-  BMKLocationKit: cbe7a93bc288465e12961e65aa3f11a8f9da3bb1
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  LKProvide: e744768d5c257fb486f2e960913c733620f0b4f1
+  LKProvide: e6cfca95fbc43bd930def3310e5b7ec6918d5426
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9

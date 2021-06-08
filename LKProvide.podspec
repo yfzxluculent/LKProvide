@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LKProvide'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'LKProvide.'
 
 # This description is used to generate tags and improve search results.
@@ -39,9 +39,9 @@ s.vendored_libraries = 'LKProvide/Classes/**/*.a'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-s.dependency 'BaiduMobStatCodeless', '5.0.8'
-s.dependency 'BaiduMapKit', '4.4.2'
-s.dependency 'BMKLocationKit', '1.7.0'
+#s.dependency 'BaiduMobStatCodeless', '5.0.8'
+#s.dependency 'BaiduMapKit', '4.4.2'
+#s.dependency 'BMKLocationKit', '1.7.0'
 s.dependency 'DACircularProgress'
 s.dependency 'SDWebImage', '5.0.1'
 s.dependency 'MBProgressHUD', '1.1.0'
