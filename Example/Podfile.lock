@@ -1,102 +1,12 @@
 PODS:
   - DACircularProgress (2.3.1)
-  - LKProvide (0.1.8):
+  - LKProvide (1.0.0):
     - DACircularProgress
-    - LKProvide/AuthorizationCenter (= 0.1.8)
-    - LKProvide/Categories (= 0.1.8)
-    - LKProvide/HTBadgeHelper (= 0.1.8)
-    - LKProvide/HYSangForVPNConnect (= 0.1.8)
-    - LKProvide/LKAlertController (= 0.1.8)
-    - LKProvide/LKCaptivePortal (= 0.1.8)
-    - LKProvide/LKCodeScan (= 0.1.8)
-    - LKProvide/LKDate (= 0.1.8)
-    - LKProvide/LKLanguage (= 0.1.8)
-    - LKProvide/LKNibBridge (= 0.1.8)
-    - LKProvide/LKSafeTool (= 0.1.8)
-    - LKProvide/LKScaleLevel (= 0.1.8)
-    - LKProvide/LKSkinTheme (= 0.1.8)
-    - LKProvide/MWPhotoBrowser (= 0.1.8)
-    - LKProvide/Signature (= 0.1.8)
-    - LKProvide/URLHelper (= 0.1.8)
+    - LKProvide/Categories (= 1.0.0)
     - Masonry
     - MBProgressHUD (= 1.1.0)
     - SDWebImage (= 5.0.1)
-  - LKProvide/AuthorizationCenter (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/Categories (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/HTBadgeHelper (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/HYSangForVPNConnect (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKAlertController (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKCaptivePortal (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKCodeScan (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKDate (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKLanguage (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKNibBridge (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKSafeTool (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKScaleLevel (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/LKSkinTheme (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/MWPhotoBrowser (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/Signature (0.1.8):
-    - DACircularProgress
-    - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
-  - LKProvide/URLHelper (0.1.8):
+  - LKProvide/Categories (1.0.0):
     - DACircularProgress
     - Masonry
     - MBProgressHUD (= 1.1.0)
@@ -123,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  LKProvide: 091471f3ef5b8f4703cc9b09a4351aa518c0e0ce
+  LKProvide: 9ce15d82329a36af41f9a9ea44d76fd0f86d1886
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
