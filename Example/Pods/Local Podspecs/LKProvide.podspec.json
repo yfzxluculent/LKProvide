@@ -1,6 +1,6 @@
 {
   "name": "LKProvide",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "summary": "LKProvide.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yfzxluculent/LKProvide",
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/yfzxluculent/LKProvide.git",
-    "tag": "0.1.7"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "LKProvide/Classes/**/*{h,m}",
-  "resources": "LKProvide/Classes/**/*.{png,bundle}",
+  "resources": "LKProvide/Classes/**/*.{png,bundle,xcassets}",
   "vendored_libraries": "LKProvide/Classes/**/*.a",
   "dependencies": {
     "DACircularProgress": [
@@ -34,5 +34,71 @@
     "Masonry": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Categories",
+      "source_files": "LKProvide/Classes/Categories/**/*.{h,m}"
+    },
+    {
+      "name": "AuthorizationCenter",
+      "source_files": "LKProvide/Classes/Tools/AuthorizationCenter/*.{h,m}"
+    },
+    {
+      "name": "HTBadgeHelper",
+      "source_files": "LKProvide/Classes/Tools/HTBadgeHelper/*.{h,m}"
+    },
+    {
+      "name": "HYSangForVPNConnect",
+      "source_files": "LKProvide/Classes/Tools/HYSangForVPNConnect/**/*.{h,m}"
+    },
+    {
+      "name": "LKAlertController",
+      "source_files": "LKProvide/Classes/Tools/LKAlertController/**/*.{h,m}"
+    },
+    {
+      "name": "LKCaptivePortal",
+      "source_files": "LKProvide/Classes/Tools/LKCaptivePortal/*.{h,m}"
+    },
+    {
+      "name": "LKCodeScan",
+      "source_files": "LKProvide/Classes/Tools/LKCodeScan/**/*.{h,m}"
+    },
+    {
+      "name": "LKDate",
+      "source_files": "LKProvide/Classes/Tools/LKDate/*.{h,m}"
+    },
+    {
+      "name": "LKLanguage",
+      "source_files": "LKProvide/Classes/Tools/LKLanguage/*.{h,m}"
+    },
+    {
+      "name": "LKNibBridge",
+      "source_files": "LKProvide/Classes/Tools/LKNibBridge/*.{h,m}"
+    },
+    {
+      "name": "LKSafeTool",
+      "source_files": "LKProvide/Classes/Tools/LKSafeTool/**/*.{h,m}"
+    },
+    {
+      "name": "LKScaleLevel",
+      "source_files": "LKProvide/Classes/Tools/LKScaleLevel/*.{h,m}"
+    },
+    {
+      "name": "LKSkinTheme",
+      "source_files": "LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}"
+    },
+    {
+      "name": "MWPhotoBrowser",
+      "source_files": "LKProvide/Classes/Tools/MWPhotoBrowser/**/*.{h,m}"
+    },
+    {
+      "name": "Signature",
+      "source_files": "LKProvide/Classes/Tools/Signature/*.{h,m}"
+    },
+    {
+      "name": "URLHelper",
+      "source_files": "LKProvide/Classes/Tools/URLHelper/*.{h,m}"
+    }
+  ]
 }

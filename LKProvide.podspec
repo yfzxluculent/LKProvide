@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LKProvide'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'LKProvide.'
 
 # This description is used to generate tags and improve search results.
@@ -32,16 +32,71 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LKProvide/Classes/**/*{h,m}'
   
-s.resources    = "LKProvide/Classes/**/*.{png,bundle}"
+s.resources    = "LKProvide/Classes/**/*.{png,bundle,xcassets}"
 s.vendored_libraries = 'LKProvide/Classes/**/*.a'
+
+s.subspec 'Categories' do |ss|
+ss.source_files  = 'LKProvide/Classes/Categories/**/*.{h,m}'
+end
+
+s.subspec 'AuthorizationCenter' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/AuthorizationCenter/*.{h,m}'
+end
+
+s.subspec 'HTBadgeHelper' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/HTBadgeHelper/*.{h,m}'
+end
+
+s.subspec 'HYSangForVPNConnect' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/HYSangForVPNConnect/**/*.{h,m}'
+end
+s.subspec 'LKAlertController' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKAlertController/**/*.{h,m}'
+end
+s.subspec 'LKCaptivePortal' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKCaptivePortal/*.{h,m}'
+end
+s.subspec 'LKCodeScan' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKCodeScan/**/*.{h,m}'
+end
+s.subspec 'LKDate' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKDate/*.{h,m}'
+end
+s.subspec 'LKLanguage' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKLanguage/*.{h,m}'
+end
+s.subspec 'LKNibBridge' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKNibBridge/*.{h,m}'
+end
+s.subspec 'LKSafeTool' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKSafeTool/**/*.{h,m}'
+end
+s.subspec 'LKScaleLevel' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKScaleLevel/*.{h,m}'
+end
+s.subspec 'LKSkinTheme' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}'
+end
+
+
+s.subspec 'MWPhotoBrowser' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/MWPhotoBrowser/**/*.{h,m}'
+end
+
+s.subspec 'Signature' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/Signature/*.{h,m}'
+end
+
+
+s.subspec 'URLHelper' do |ss|
+ss.source_files  = 'LKProvide/Classes/Tools/URLHelper/*.{h,m}'
+end
 
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-#s.dependency 'BaiduMobStatCodeless', '5.0.8'
-#s.dependency 'BaiduMapKit', '4.4.2'
-#s.dependency 'BMKLocationKit', '1.7.0'
+
 s.dependency 'DACircularProgress'
 s.dependency 'SDWebImage', '5.0.1'
 s.dependency 'MBProgressHUD', '1.1.0'
