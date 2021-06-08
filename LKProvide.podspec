@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LKProvide'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'LKProvide.'
 
 # This description is used to generate tags and improve search results.
@@ -42,5 +42,7 @@ s.vendored_libraries = 'LKProvide/Classes/**/*.a'
 s.dependency 'BaiduMobStatCodeless', '5.0.8'
 s.dependency 'BaiduMapKit', '4.4.2'
 s.dependency 'BMKLocationKit', '1.7.0'
+s.dependency 'DACircularProgress'
+s.dependency 'SDWebImage', '5.0.1'
 
 end

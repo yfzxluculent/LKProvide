@@ -2,10 +2,16 @@ PODS:
   - BaiduMapKit (4.4.2)
   - BaiduMobStatCodeless (5.0.8)
   - BMKLocationKit (1.7.0)
-  - LKProvide (0.1.1):
+  - DACircularProgress (2.3.1)
+  - LKProvide (0.1.4):
     - BaiduMapKit (= 4.4.2)
     - BaiduMobStatCodeless (= 5.0.8)
     - BMKLocationKit (= 1.7.0)
+    - DACircularProgress
+    - SDWebImage (= 5.0.1)
+  - SDWebImage (5.0.1):
+    - SDWebImage/Core (= 5.0.1)
+  - SDWebImage/Core (5.0.1)
 
 DEPENDENCIES:
   - LKProvide (from `../`)
@@ -15,6 +21,8 @@ SPEC REPOS:
     - BaiduMapKit
     - BaiduMobStatCodeless
     - BMKLocationKit
+    - DACircularProgress
+    - SDWebImage
 
 EXTERNAL SOURCES:
   LKProvide:
@@ -24,7 +32,9 @@ SPEC CHECKSUMS:
   BaiduMapKit: 11acde2e7c06e31b7de60b323880a5eb7c4dccb6
   BaiduMobStatCodeless: a892f5eb0854731ddecf4e334f962f13846d20ee
   BMKLocationKit: cbe7a93bc288465e12961e65aa3f11a8f9da3bb1
-  LKProvide: 658bfa750b394adeb10a5640507424b3297f2ca1
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  LKProvide: cd56b2fdf5fdc22855a9de4db421bc148bf2e8f5
+  SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
 
 PODFILE CHECKSUM: 51d585f53be713ed93db67874ea481f888f21aa0
 
