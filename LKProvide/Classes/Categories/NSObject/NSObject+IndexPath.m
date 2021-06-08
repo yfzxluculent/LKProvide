@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+IndexPath.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (IndexPath)
 
