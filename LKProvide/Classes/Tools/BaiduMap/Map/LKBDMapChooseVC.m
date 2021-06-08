@@ -7,7 +7,18 @@
 //
 
 #import "LKBDMapChooseVC.h"
+#import <Masonry/Masonry.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BMKLocationkit/BMKLocationComponent.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+#import <BaiduMapAPI_Map/BMKMapView.h>
+#import <BMKLocationkit/BMKLocationAuth.h>
 
+#define BMKSafeString(A) A?A:@""
+
+#define BMK_UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]// rgb颜色转换（16进制->10进制）
 @implementation LKBDMapChooseModel
 
 @end
@@ -39,9 +50,9 @@
     if (self) {
         self.mapTyp = mapTyp;
         self.resultModel = [LKBDMapChooseModel new];
-        self.resultModel.address = SafeString(origin.address);
-        self.resultModel.latitude = SafeString(origin.latitude);
-        self.resultModel.longitude = SafeString(origin.longitude);
+        self.resultModel.address = BMKSafeString(origin.address);
+        self.resultModel.latitude = BMKSafeString(origin.latitude);
+        self.resultModel.longitude = BMKSafeString(origin.longitude);
     }
     return self;
 }
@@ -62,12 +73,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     if (self.mapTyp == LKMapTypeLocationChoose) {
-        self.title = LKString(@"位置选择");
-        UIBarButtonItem *confirmBar = [[UIBarButtonItem alloc] initWithTitle:LKString(@"确定") style:(UIBarButtonItemStylePlain) target:self action:@selector(confirmAction)];
+        self.title = @"位置选择";
+        UIBarButtonItem *confirmBar = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:(UIBarButtonItemStylePlain) target:self action:@selector(confirmAction)];
         self.navigationItem.rightBarButtonItem = confirmBar;
     }else{
-        self.title = LKString(@"位置展示");
-        UIBarButtonItem *naviBar = [[UIBarButtonItem alloc] initWithTitle:LKString(@"导航") style:(UIBarButtonItemStylePlain) target:self action:@selector(naviAction)];
+        self.title = @"位置展示";
+        UIBarButtonItem *naviBar = [[UIBarButtonItem alloc] initWithTitle:@"导航" style:(UIBarButtonItemStylePlain) target:self action:@selector(naviAction)];
         self.navigationItem.rightBarButtonItem = naviBar;
     }
     
@@ -401,7 +412,7 @@
     UIView *targetView = [HTHelper findViewWithClassName:@"UINavigationButton" inView:searchBar];
     if(targetView){
         UIButton * cancel =(UIButton *)targetView;
-        [cancel setTitle:LKString(@"取消") forState:UIControlStateNormal];
+        [cancel setTitle:@"取消" forState:UIControlStateNormal];
         [cancel setTitleColor:HT_MAIN_Theme_COLOR forState:UIControlStateNormal];
         [cancel setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     }
@@ -507,9 +518,9 @@
     
     if (!_headView) {
         _headView = [UIView new];
-        _headView.backgroundColor = [HT_UIColorFromRGB(0xFFFFFF) colorWithAlphaComponent:1];
+        _headView.backgroundColor = [BMK_UIColorFromRGB(0xFFFFFF) colorWithAlphaComponent:1];
         UIView *line = [UIView new];
-        line.backgroundColor = HT_UIColorFromRGB(0xF5F5F5);
+        line.backgroundColor = BMK_UIColorFromRGB(0xF5F5F5);
         [_headView addSubview:line];
         [line mas_makeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.offset(0);
@@ -525,18 +536,18 @@
         
         _searchBar = [UISearchBar new];
         _searchBar.tintColor = HT_MAIN_Theme_COLOR;
-        _searchBar.barTintColor = HT_UIColorFromRGB(0xFFFFFF);
+        _searchBar.barTintColor = BMK_UIColorFromRGB(0xFFFFFF);
         _searchBar.layer.borderWidth = 0.5f;
-        _searchBar.layer.borderColor = HT_UIColorFromRGB(0xFFFFFF).CGColor;
-        _searchBar.backgroundColor = HT_UIColorFromRGB(0xFFFFFF);
-        _searchBar.placeholder = LKString(@"查找地点");
+        _searchBar.layer.borderColor = BMK_UIColorFromRGB(0xFFFFFF).CGColor;
+        _searchBar.backgroundColor = BMK_UIColorFromRGB(0xFFFFFF);
+        _searchBar.placeholder = @"查找地点";
         _searchBar.delegate = self;
         
-        UIView *targetView = [HTHelper findViewWithClassName:@"UISearchBarTextField" inView:self.searchBar];
+        UIView *targetView = [self findViewWithClassName:@"UISearchBarTextField" inView:self.searchBar];
         if(targetView){
             
             UITextField *textField = (UITextField *)targetView;
-            textField.backgroundColor = HT_UIColorFromRGB(0xF5F5F5);
+            textField.backgroundColor = BMK_UIColorFromRGB(0xF5F5F5);
             textField.layer.cornerRadius = 2.0f;
         }
         
@@ -550,12 +561,29 @@
     if (!_locationLabel) {
         _locationLabel = [UILabel new];
         _locationLabel.numberOfLines = 0;
-        _locationLabel.textColor = HT_UIColorFromRGB(0x333333);
+        _locationLabel.textColor = BMK_UIColorFromRGB(0x333333);
         _locationLabel.font = [UIFont systemFontOfSize: (14)];
     }
     return _locationLabel;
 }
+    
 
+    - (UIView *)findViewWithClassName:(NSString *)className inView:(UIView *)view{
+        Class specificView = NSClassFromString(className);
+        if ([view isKindOfClass:specificView]) {
+            return view;
+        }
+        
+        if (view.subviews.count > 0) {
+            for (UIView *subView in view.subviews) {
+                UIView *targetView = [self findViewWithClassName:className inView:subView];
+                if (targetView != nil) {
+                    return targetView;
+                }
+            }
+        }
+        return nil;
+    }
 
 
 - (void)didReceiveMemoryWarning {

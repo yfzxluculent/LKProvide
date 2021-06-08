@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, LKMapType){
 typedef void(^LKBDMapChooseBlock)(LKBDMapChooseModel *model);
 
 
-@interface LKBDMapChooseVC : LKBaseViewController
+@interface LKBDMapChooseVC : UIViewController
 
 @property (nonatomic, assign, readonly) LKMapType mapTyp;
 @property (nonatomic, assign) BOOL needLocationImg;
