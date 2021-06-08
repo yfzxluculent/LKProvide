@@ -13,6 +13,8 @@
 #import "JWTClaimsSetSerializer.h"
 #import "JWTClaimsSetVerifier.h"
 #import "JWTRSAlgorithm.h"
+#import "JWTCoding.h"
+#import "JWTClaimsSet.h"
 
 static NSString *JWTErrorDomain = @"com.karma.jwt";
 
@@ -66,7 +68,7 @@ static NSString *JWTErrorDomain = @"com.karma.jwt";
         if (error) {
             *error = generatedError;
         }
-        HTLog(@"%@ Could not encode segment: %@", self.class, generatedError.localizedDescription);
+        NSLog(@"%@ Could not encode segment: %@", self.class, generatedError.localizedDescription);
         return nil;
     }
     
@@ -623,7 +625,7 @@ static NSString *JWTErrorDomain = @"com.karma.jwt";
         if (error) {
             *error = generatedError;
         }
-        HTLog(@"%@ Could not encode segment: %@", self.class, generatedError.localizedDescription);
+        NSLog(@"%@ Could not encode segment: %@", self.class, generatedError.localizedDescription);
         return nil;
     }
     
