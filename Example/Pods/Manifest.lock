@@ -2,7 +2,7 @@ PODS:
   - BaiduMapKit (4.4.2)
   - BaiduMobStatCodeless (5.0.8)
   - BMKLocationKit (1.7.0)
-  - LKProvide (0.1.0):
+  - LKProvide (0.1.1):
     - BaiduMapKit (= 4.4.2)
     - BaiduMobStatCodeless (= 5.0.8)
     - BMKLocationKit (= 1.7.0)
@@ -24,7 +24,7 @@ SPEC CHECKSUMS:
   BaiduMapKit: 11acde2e7c06e31b7de60b323880a5eb7c4dccb6
   BaiduMobStatCodeless: a892f5eb0854731ddecf4e334f962f13846d20ee
   BMKLocationKit: cbe7a93bc288465e12961e65aa3f11a8f9da3bb1
-  LKProvide: 138da1c46c4456f3b6a6b8af30d9cdd1a0e4807e
+  LKProvide: 658bfa750b394adeb10a5640507424b3297f2ca1
 
 PODFILE CHECKSUM: 51d585f53be713ed93db67874ea481f888f21aa0
 

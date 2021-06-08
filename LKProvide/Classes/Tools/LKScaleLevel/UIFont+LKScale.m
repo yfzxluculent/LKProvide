@@ -7,6 +7,7 @@
 //
 
 #import "UIFont+LKScale.h"
+#import <objc/runtime.h>
 
 @implementation UIFont (LKScale)
 

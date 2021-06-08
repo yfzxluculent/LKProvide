@@ -73,7 +73,7 @@
     [sourceImage drawInRect:thumbnailRect];
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    if(newImage == nil) HTLog(@"could not scale image");
+    if(newImage == nil) NSLog(@"could not scale image");
     return newImage ;
 }
 

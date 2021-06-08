@@ -28,7 +28,7 @@
     UIImage *centerIcon = icon;
     
     if (!icon) {
-        centerIcon = HT_IMAGENAME(@"qr_icon");
+        centerIcon = [UIImage imageNamed:@"qr_icon"];
     }
     
     if (!centerIcon) {
@@ -189,7 +189,7 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
             }
         }
     } else {
-        HTLog(@"未正常解析二维码图片, 请确保iphone5/5c以上的设备");
+        NSLog(@"未正常解析二维码图片, 请确保iphone5/5c以上的设备");
     }
 
     return content;
