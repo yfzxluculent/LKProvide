@@ -1,7 +1,7 @@
 {
   "name": "LKProvide",
   "version": "0.1.0",
-  "summary": "A short description of LKProvide.",
+  "summary": "LKProvide.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yfzxluculent/LKProvide",
   "license": {
@@ -18,5 +18,18 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "LKProvide/Classes/**/*"
+  "source_files": "LKProvide/Classes/**/*{h,m}",
+  "resources": "LKProvide/Classes/**/*.{png,bundle}",
+  "vendored_libraries": "LKProvide/Classes/**/*.a",
+  "dependencies": {
+    "BaiduMobStatCodeless": [
+      "5.0.8"
+    ],
+    "BaiduMapKit": [
+      "4.4.2"
+    ],
+    "BMKLocationKit": [
+      "1.7.0"
+    ]
+  }
 }

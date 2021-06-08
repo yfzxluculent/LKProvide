@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LKProvide'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LKProvide.'
+  s.summary          = 'LKProvide.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,12 +32,15 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LKProvide/Classes/**/*{h,m}'
   
-s.resources    = "LKVendors/Classes/**/*.{png,bundle,txt,a}"
+s.resources    = "LKProvide/Classes/**/*.{png,bundle}"
+s.vendored_libraries = 'LKProvide/Classes/**/*.a'
+
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-s.dependency 'BaiduMobStatCodeless', '~> 2.3'
-s.dependency 'BaiduMapKit', '~> 2.3'
-s.dependency 'BMKLocationKit', '~> 2.3'
+s.dependency 'BaiduMobStatCodeless', '5.0.8'
+s.dependency 'BaiduMapKit', '4.4.2'
+s.dependency 'BMKLocationKit', '1.7.0'
 
 end
