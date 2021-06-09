@@ -1,6 +1,6 @@
 {
   "name": "LKProvide",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "summary": "LKProvide.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yfzxluculent/LKProvide",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yfzxluculent/LKProvide.git",
-    "tag": "1.0.5"
+    "tag": "1.0.6"
   },
   "platforms": {
     "ios": "9.0"
@@ -71,11 +71,6 @@
           "name": "LKSkinTheme",
           "source_files": "LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}",
           "resources": "LKProvide/Classes/Tools/LKSkinTheme/**/*.{png,bundle}"
-        },
-        {
-          "name": "HYSangForVPNConnect",
-          "source_files": "LKProvide/Classes/Tools/HYSangForVPNConnect/*.{h,m}",
-          "vendored_libraries": "LKProvide/Classes/Tools/HYSangForVPNConnect/**/*.a"
         },
         {
           "name": "MWPhotoBrowser",
