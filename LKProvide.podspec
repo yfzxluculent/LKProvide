@@ -6,9 +6,10 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+
 Pod::Spec.new do |s|
   s.name             = 'LKProvide'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'LKProvide.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +32,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
 # s.source_files = 'LKProvide/Classes/**/*{h,m}'
-  
+
 
 s.subspec 'Categories' do |ss|
 ss.source_files  = 'LKProvide/Classes/Categories/**/*.{h,m}'
@@ -77,11 +78,6 @@ s.subspec 'Tools' do |ss|
     sss.source_files  = 'LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}'
     sss.resources    = "LKProvide/Classes/Tools/LKSkinTheme/**/*.{png,bundle}"
 
-    end
-
-    ss.subspec 'HYSangForVPNConnect' do |sss|
-    sss.source_files  = 'LKProvide/Classes/Tools/HYSangForVPNConnect/*.{h,m}'
-    sss.vendored_libraries = 'LKProvide/Classes/Tools/HYSangForVPNConnect/**/*.a'
     end
 
 
