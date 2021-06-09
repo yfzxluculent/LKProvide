@@ -23,6 +23,7 @@
 #import "UIView+Util.h"
 #import "AuthorizationCenter.h"
 #import "HTBadgeHelper.h"
+#import "HYSangForVPNConnecter.h"
 #import "LKAlertController.h"
 #import "LKAlertModel.h"
 #import "LKAlertMultiChooseView.h"

@@ -55,7 +55,7 @@ s.subspec 'Tools' do |ss|
     end
     ss.subspec 'LKCodeScan' do |sss|
     sss.source_files  = 'LKProvide/Classes/Tools/LKCodeScan/**/*.{h,m}'
-    sss.resources    = "LKProvide/Classes/Tools/LKCodeScan/*.{png,bundle}"
+    sss.resources    = "LKProvide/Classes/Tools/LKCodeScan/**/*.{png,bundle}"
     end
     ss.subspec 'LKDate' do |sss|
     sss.source_files  = 'LKProvide/Classes/Tools/LKDate/*.{h,m}'
@@ -68,16 +68,20 @@ s.subspec 'Tools' do |ss|
     end
     ss.subspec 'LKSafeTool' do |sss|
     sss.source_files  = 'LKProvide/Classes/Tools/LKSafeTool/**/*.{h,m}'
-    sss.resources    = "LKProvide/Classes/Tools/LKSafeTool/**/*.{png,bundle}"
-
     end
     ss.subspec 'LKScaleLevel' do |sss|
     sss.source_files  = 'LKProvide/Classes/Tools/LKScaleLevel/*.{h,m}'
     end
+
     ss.subspec 'LKSkinTheme' do |sss|
     sss.source_files  = 'LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}'
     sss.resources    = "LKProvide/Classes/Tools/LKSkinTheme/**/*.{png,bundle}"
 
+    end
+
+    ss.subspec 'HYSangForVPNConnect' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/HYSangForVPNConnect/*.{h,m}'
+    sss.vendored_libraries = 'LKProvide/Classes/Tools/HYSangForVPNConnect/**/*.a'
     end
 
 
@@ -87,7 +91,6 @@ s.subspec 'Tools' do |ss|
     sss.dependency 'DACircularProgress'
     sss.dependency 'SDWebImage', '5.0.1'
     sss.dependency 'MBProgressHUD', '1.1.0'
-
     end
 
     ss.subspec 'Signature' do |sss|
