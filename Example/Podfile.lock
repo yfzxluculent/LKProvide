@@ -1,16 +1,42 @@
 PODS:
   - DACircularProgress (2.3.1)
-  - LKProvide (1.0.1):
+  - LKProvide (1.0.2):
+    - LKProvide/Categories (= 1.0.2)
+    - LKProvide/Tools (= 1.0.2)
+  - LKProvide/Categories (1.0.2)
+  - LKProvide/Tools (1.0.2):
+    - LKProvide/Tools/AuthorizationCenter (= 1.0.2)
+    - LKProvide/Tools/HTBadgeHelper (= 1.0.2)
+    - LKProvide/Tools/LKAlertController (= 1.0.2)
+    - LKProvide/Tools/LKCaptivePortal (= 1.0.2)
+    - LKProvide/Tools/LKCodeScan (= 1.0.2)
+    - LKProvide/Tools/LKDate (= 1.0.2)
+    - LKProvide/Tools/LKLanguage (= 1.0.2)
+    - LKProvide/Tools/LKNibBridge (= 1.0.2)
+    - LKProvide/Tools/LKSafeTool (= 1.0.2)
+    - LKProvide/Tools/LKScaleLevel (= 1.0.2)
+    - LKProvide/Tools/LKSkinTheme (= 1.0.2)
+    - LKProvide/Tools/MWPhotoBrowser (= 1.0.2)
+    - LKProvide/Tools/Signature (= 1.0.2)
+    - LKProvide/Tools/URLHelper (= 1.0.2)
+  - LKProvide/Tools/AuthorizationCenter (1.0.2)
+  - LKProvide/Tools/HTBadgeHelper (1.0.2)
+  - LKProvide/Tools/LKAlertController (1.0.2)
+  - LKProvide/Tools/LKCaptivePortal (1.0.2)
+  - LKProvide/Tools/LKCodeScan (1.0.2)
+  - LKProvide/Tools/LKDate (1.0.2)
+  - LKProvide/Tools/LKLanguage (1.0.2)
+  - LKProvide/Tools/LKNibBridge (1.0.2)
+  - LKProvide/Tools/LKSafeTool (1.0.2)
+  - LKProvide/Tools/LKScaleLevel (1.0.2)
+  - LKProvide/Tools/LKSkinTheme (1.0.2)
+  - LKProvide/Tools/MWPhotoBrowser (1.0.2):
     - DACircularProgress
-    - LKProvide/Categories (= 1.0.1)
-    - Masonry
     - MBProgressHUD (= 1.1.0)
     - SDWebImage (= 5.0.1)
-  - LKProvide/Categories (1.0.1):
-    - DACircularProgress
+  - LKProvide/Tools/Signature (1.0.2):
     - Masonry
-    - MBProgressHUD (= 1.1.0)
-    - SDWebImage (= 5.0.1)
+  - LKProvide/Tools/URLHelper (1.0.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - SDWebImage (5.0.1):
@@ -33,7 +59,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  LKProvide: f32630911579d7c0ce7ba367dfe59b60a2dff88f
+  LKProvide: d07978256c410ce8fdf31f8084f2ffe2119965a7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LKProvide'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = 'LKProvide.'
 
 # This description is used to generate tags and improve search results.
@@ -30,73 +30,83 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LKProvide/Classes/**/*{h,m}'
+# s.source_files = 'LKProvide/Classes/**/*{h,m}'
   
-s.resources    = "LKProvide/Classes/**/*.{png,bundle}"
-s.vendored_libraries = 'LKProvide/Classes/**/*.a'
 
 s.subspec 'Categories' do |ss|
 ss.source_files  = 'LKProvide/Classes/Categories/**/*.{h,m}'
+
 end
 
-#s.subspec 'AuthorizationCenter' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/AuthorizationCenter/*.{h,m}'
-#end
+s.subspec 'Tools' do |ss|
+    ss.subspec 'AuthorizationCenter' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/AuthorizationCenter/*.{h,m}'
+    end
 
-#s.subspec 'HTBadgeHelper' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/HTBadgeHelper/*.{h,m}'
-#end
+    ss.subspec 'HTBadgeHelper' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/HTBadgeHelper/*.{h,m}'
+    end
 
-#s.subspec 'LKAlertController' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKAlertController/**/*.{h,m}'
-#end
-#s.subspec 'LKCaptivePortal' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKCaptivePortal/*.{h,m}'
-#end
-#s.subspec 'LKCodeScan' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKCodeScan/**/*.{h,m}'
-#end
-#s.subspec 'LKDate' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKDate/*.{h,m}'
-#end
-#s.subspec 'LKLanguage' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKLanguage/*.{h,m}'
-#end
-#s.subspec 'LKNibBridge' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKNibBridge/*.{h,m}'
-#end
-#s.subspec 'LKSafeTool' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKSafeTool/**/*.{h,m}'
-#end
-#s.subspec 'LKScaleLevel' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKScaleLevel/*.{h,m}'
-#end
-#s.subspec 'LKSkinTheme' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}'
-#end
+    ss.subspec 'LKAlertController' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKAlertController/**/*.{h,m}'
+    end
+    ss.subspec 'LKCaptivePortal' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKCaptivePortal/*.{h,m}'
+    end
+    ss.subspec 'LKCodeScan' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKCodeScan/**/*.{h,m}'
+    sss.resources    = "LKProvide/Classes/Tools/LKCodeScan/*.{png,bundle}"
+    end
+    ss.subspec 'LKDate' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKDate/*.{h,m}'
+    end
+    ss.subspec 'LKLanguage' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKLanguage/*.{h,m}'
+    end
+    ss.subspec 'LKNibBridge' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKNibBridge/*.{h,m}'
+    end
+    ss.subspec 'LKSafeTool' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKSafeTool/**/*.{h,m}'
+    sss.resources    = "LKProvide/Classes/Tools/LKSafeTool/**/*.{png,bundle}"
 
+    end
+    ss.subspec 'LKScaleLevel' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKScaleLevel/*.{h,m}'
+    end
+    ss.subspec 'LKSkinTheme' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/LKSkinTheme/*.{h,m}'
+    sss.resources    = "LKProvide/Classes/Tools/LKSkinTheme/**/*.{png,bundle}"
 
-#s.subspec 'MWPhotoBrowser' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/MWPhotoBrowser/**/*.{h,m}'
-#end
-
-#s.subspec 'Signature' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/Signature/*.{h,m}'
-#end
+    end
 
 
-#s.subspec 'URLHelper' do |ss|
-#ss.source_files  = 'LKProvide/Classes/Tools/URLHelper/*.{h,m}'
-#end
+    ss.subspec 'MWPhotoBrowser' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/MWPhotoBrowser/**/*.{h,m}'
+    sss.resources    = "LKProvide/Classes/Tools/MWPhotoBrowser/*.{bundle}"
+    sss.dependency 'DACircularProgress'
+    sss.dependency 'SDWebImage', '5.0.1'
+    sss.dependency 'MBProgressHUD', '1.1.0'
+
+    end
+
+    ss.subspec 'Signature' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/Signature/*.{h,m}'
+    sss.dependency 'Masonry'
+    end
+
+
+    ss.subspec 'URLHelper' do |sss|
+    sss.source_files  = 'LKProvide/Classes/Tools/URLHelper/*.{h,m}'
+    end
+
+end
 
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
-s.dependency 'DACircularProgress'
-s.dependency 'SDWebImage', '5.0.1'
-s.dependency 'MBProgressHUD', '1.1.0'
-s.dependency 'Masonry'
+
 
 end

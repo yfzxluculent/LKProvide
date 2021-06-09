@@ -79,17 +79,6 @@
 #import "LKSignaTureView.h"
 #import "LKSignaTureViewController.h"
 #import "LKURLHelper.h"
-#import "NSDate+Util.h"
-#import "NSDictionary+Utils.h"
-#import "NSObject+IndexPath.h"
-#import "GTMDefines.h"
-#import "GTMNSString+HTML.h"
-#import "NSString+HTML.h"
-#import "NSString+Util.h"
-#import "UIAlertController+fitIPadIphone.h"
-#import "UIImage+HYQRCode.h"
-#import "UIImage+Util.h"
-#import "UIView+Util.h"
 
 FOUNDATION_EXPORT double LKProvideVersionNumber;
 FOUNDATION_EXPORT const unsigned char LKProvideVersionString[];
