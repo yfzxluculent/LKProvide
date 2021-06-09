@@ -1,44 +1,44 @@
 PODS:
   - DACircularProgress (2.3.1)
-  - LKProvide (1.0.3):
-    - LKProvide/Categories (= 1.0.3)
-    - LKProvide/Tools (= 1.0.3)
-  - LKProvide/Categories (1.0.3)
-  - LKProvide/Tools (1.0.3):
-    - LKProvide/Tools/AuthorizationCenter (= 1.0.3)
-    - LKProvide/Tools/HTBadgeHelper (= 1.0.3)
-    - LKProvide/Tools/HYSangForVPNConnect (= 1.0.3)
-    - LKProvide/Tools/LKAlertController (= 1.0.3)
-    - LKProvide/Tools/LKCaptivePortal (= 1.0.3)
-    - LKProvide/Tools/LKCodeScan (= 1.0.3)
-    - LKProvide/Tools/LKDate (= 1.0.3)
-    - LKProvide/Tools/LKLanguage (= 1.0.3)
-    - LKProvide/Tools/LKNibBridge (= 1.0.3)
-    - LKProvide/Tools/LKSafeTool (= 1.0.3)
-    - LKProvide/Tools/LKScaleLevel (= 1.0.3)
-    - LKProvide/Tools/LKSkinTheme (= 1.0.3)
-    - LKProvide/Tools/MWPhotoBrowser (= 1.0.3)
-    - LKProvide/Tools/Signature (= 1.0.3)
-    - LKProvide/Tools/URLHelper (= 1.0.3)
-  - LKProvide/Tools/AuthorizationCenter (1.0.3)
-  - LKProvide/Tools/HTBadgeHelper (1.0.3)
-  - LKProvide/Tools/HYSangForVPNConnect (1.0.3)
-  - LKProvide/Tools/LKAlertController (1.0.3)
-  - LKProvide/Tools/LKCaptivePortal (1.0.3)
-  - LKProvide/Tools/LKCodeScan (1.0.3)
-  - LKProvide/Tools/LKDate (1.0.3)
-  - LKProvide/Tools/LKLanguage (1.0.3)
-  - LKProvide/Tools/LKNibBridge (1.0.3)
-  - LKProvide/Tools/LKSafeTool (1.0.3)
-  - LKProvide/Tools/LKScaleLevel (1.0.3)
-  - LKProvide/Tools/LKSkinTheme (1.0.3)
-  - LKProvide/Tools/MWPhotoBrowser (1.0.3):
+  - LKProvide (1.0.5):
+    - LKProvide/Categories (= 1.0.5)
+    - LKProvide/Tools (= 1.0.5)
+  - LKProvide/Categories (1.0.5)
+  - LKProvide/Tools (1.0.5):
+    - LKProvide/Tools/AuthorizationCenter (= 1.0.5)
+    - LKProvide/Tools/HTBadgeHelper (= 1.0.5)
+    - LKProvide/Tools/HYSangForVPNConnect (= 1.0.5)
+    - LKProvide/Tools/LKAlertController (= 1.0.5)
+    - LKProvide/Tools/LKCaptivePortal (= 1.0.5)
+    - LKProvide/Tools/LKCodeScan (= 1.0.5)
+    - LKProvide/Tools/LKDate (= 1.0.5)
+    - LKProvide/Tools/LKLanguage (= 1.0.5)
+    - LKProvide/Tools/LKNibBridge (= 1.0.5)
+    - LKProvide/Tools/LKSafeTool (= 1.0.5)
+    - LKProvide/Tools/LKScaleLevel (= 1.0.5)
+    - LKProvide/Tools/LKSkinTheme (= 1.0.5)
+    - LKProvide/Tools/MWPhotoBrowser (= 1.0.5)
+    - LKProvide/Tools/Signature (= 1.0.5)
+    - LKProvide/Tools/URLHelper (= 1.0.5)
+  - LKProvide/Tools/AuthorizationCenter (1.0.5)
+  - LKProvide/Tools/HTBadgeHelper (1.0.5)
+  - LKProvide/Tools/HYSangForVPNConnect (1.0.5)
+  - LKProvide/Tools/LKAlertController (1.0.5)
+  - LKProvide/Tools/LKCaptivePortal (1.0.5)
+  - LKProvide/Tools/LKCodeScan (1.0.5)
+  - LKProvide/Tools/LKDate (1.0.5)
+  - LKProvide/Tools/LKLanguage (1.0.5)
+  - LKProvide/Tools/LKNibBridge (1.0.5)
+  - LKProvide/Tools/LKSafeTool (1.0.5)
+  - LKProvide/Tools/LKScaleLevel (1.0.5)
+  - LKProvide/Tools/LKSkinTheme (1.0.5)
+  - LKProvide/Tools/MWPhotoBrowser (1.0.5):
     - DACircularProgress
     - MBProgressHUD (= 1.1.0)
     - SDWebImage (= 5.0.1)
-  - LKProvide/Tools/Signature (1.0.3):
+  - LKProvide/Tools/Signature (1.0.5):
     - Masonry
-  - LKProvide/Tools/URLHelper (1.0.3)
+  - LKProvide/Tools/URLHelper (1.0.5)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - SDWebImage (5.0.1):
@@ -61,7 +61,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  LKProvide: 3a04b7d63bdae678b3c0ef6000418f91cd96ade5
+  LKProvide: 8079a8c85d12af395e7f7a48cb3474cd1dddeacb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9

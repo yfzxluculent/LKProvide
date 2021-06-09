@@ -1,6 +1,6 @@
 {
   "name": "LKProvide",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "summary": "LKProvide.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/yfzxluculent/LKProvide",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yfzxluculent/LKProvide.git",
-    "tag": "1.0.3"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "9.0"
